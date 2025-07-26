@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/khadhijasalam/LeetCode/tree/master/0053-maximum-subarray) |
 | [1019-squares-of-a-sorted-array](https://github.com/khadhijasalam/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 ## Two Pointers
 |  |
@@ -15,4 +16,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1019-squares-of-a-sorted-array](https://github.com/khadhijasalam/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/khadhijasalam/LeetCode/tree/master/0053-maximum-subarray) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/khadhijasalam/LeetCode/tree/master/0053-maximum-subarray) |
 <!---LeetCode Topics End-->
