@@ -24,7 +24,7 @@ class Solution(object):
             nums[left], nums[right] = nums[right], nums[left]
             left += 1
             right -= 1
-
+        # sorted is not exactly constant space and time complexity is O(nlogn) compared to O(n) for reverse
         # nums[i + 1:] = sorted(nums[i + 1:])
 
 
