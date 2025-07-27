@@ -19,12 +19,13 @@ class Solution(object):
             nums[i], nums[j] = nums[j], nums[i]
         
         # 3. Reverse the part after i
-        # left, right = i + 1, n - 1
-        # while left < right:
-        #     nums[left], nums[right] = nums[right], nums[left]
-        #     left += 1
-        #     right -= 
-        nums[i + 1:] = sorted(nums[i + 1:])
+        left, right = i + 1, n - 1
+        while left < right:
+            nums[left], nums[right] = nums[right], nums[left]
+            left += 1
+            right -= 1
+
+        # nums[i + 1:] = sorted(nums[i + 1:])
 
 
 
