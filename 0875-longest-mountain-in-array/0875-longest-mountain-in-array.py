@@ -5,8 +5,11 @@ class Solution(object):
         :rtype: int
         """
         ret=0
+        l=0
+        r=2
+        i=1
 
-        for i in range(1,len(arr)-1):
+        while i< len(arr)-1:
             if arr[i-1]<arr[i]>arr[i+1]:
                 l=i-1
                 r=i+1
@@ -17,6 +20,8 @@ class Solution(object):
                     r+=1
                 
                 ret= max(ret,r-l+1)
+                i=r
+            i+=1
         return ret
 
     
