@@ -6,28 +6,18 @@ class Solution(object):
         :rtype: float
         """
         arr=nums1.extend(nums2)
-        print(nums1)
-      
-        nums1.sort()
         # print(nums1)
+        nums1.sort()
         l=len(nums1)
         mid=(l//2)
-        if l%2 !=0:
-            # mid=(l//2)
-            print(mid)
-            print(nums1[mid])
+        if l%2 !=0:  
             return nums1[mid]
-            # return nums1[mid]
-
 
         else:
             temp=float((nums1[mid]+nums1[mid-1]))
+            return temp/2
 
-            a=temp/2
-            return a
-
-        # print(float(5)/2)
-            
+        
 
             
         
