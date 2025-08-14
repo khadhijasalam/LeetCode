@@ -1,7 +1,6 @@
 class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
-
         double answer;
         int sizeNums1=nums1.size();
         int sizeNums2=nums2.size();
@@ -15,7 +14,7 @@ numsM.insert(numsM.end(),nums2.begin(),nums2.end());
         int tempi;
         int k;
         int min;
-        for (int i=0;i<=sizeNumsM;i++)
+        for (int i=0;i<sizeNumsM;i++)
             {
                 min=*min_element(numsM.begin(),numsM.end());
                 numsMS.push_back(min);
@@ -30,7 +29,7 @@ numsM.insert(numsM.end(),nums2.begin(),nums2.end());
         sizeNumsMS=numsMS.size();
         double med1;
         double med2;
-        if (sizeNumsMS%2!=0) //even
+        if (sizeNumsMS%2==0) //even
         {
             med1=numsMS[(sizeNumsMS)/2];
             med2=numsMS[(sizeNumsMS/2)-1];
@@ -45,4 +44,3 @@ numsM.insert(numsM.end(),nums2.begin(),nums2.end());
         
     }
 };
-        
