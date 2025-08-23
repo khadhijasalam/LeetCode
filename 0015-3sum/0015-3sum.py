@@ -1,82 +1,76 @@
-class Solution(object):
-    def threeSum(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
-        ####
-        # Hashing
-        #####
-        nums.sort()  # Sorting helps handle duplicates
-        res = set()
-        l = len(nums)
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
 
-        for i in range(l):
-            hash_set = set()
-            for j in range(i+1, l):
-                k = -(nums[i] + nums[j])
-                if k in hash_set:
-                    triplet = tuple(sorted([nums[i], nums[j], k]))
-                    res.add(triplet)
-                hash_set.add(nums[j])
-
-        return [list(t) for t in res]
-            
-
-
-
-        # i=0
-        # j=1
-        # hash=set()
-        # res=set()
+        # ans=set()
+      
         # l=len(nums)
-    
-        # nums.sort()
-        # for i in range(l):
-        #     hash=set()
-        #     for j in range(i+1,l):
-                
-        #         k=-(nums[i]+nums[j])    #arr[i]+arr[j]+arr[k]=0. Bring other side
-        #         print(k)
-        #         if k in hash:
-        #             temp=[nums[i],nums[j],k]
-        #             res.add(tuple(temp))
-        #             # print(res)
-        #         hash.add(nums[j])
-
-        #         # else:
-        #         #     hash.add(k)
-        # return list(res)
-
-
-
-        # Doesnt work cause it give duplicat. so add in set as tuple then convert to lis
-        # res=[]
-        # l=len(nums)
-        # for i in range(l):
-        #     for j in range(i+1,l):
+        # for i in range(l-2):
+        #     for j in range(i+1,l-1):
         #         for k in range(j+1,l):
-        #             if nums[i]+nums[j]+nums[k]==0 and (i != j and i != k and j != k):
-                        
-        #                 res.append([nums[i],nums[j],nums[k]])
-        # print(res)
-        # return res
+        #             if nums[i]+nums[j]+nums[k]==0:
+        #                 a=[nums[i],nums[j],nums[k]]
+        #                 triplet= tuple(sorted(a))
+        #                 if triplet not in ans:
+        #                     ans.add(triplet)
+                       
+        # return list(ans)
 
-        ##################### Error:
+        # ans=[]
+        # l=len(nums)
+        # nums.sort()
         # left=0
-        # right=len(nums)-1
-        # i=1
-        # res=[]
-        # while left<=right and i<=right:
-        #     curr_val=nums[left]+nums[i]+nums[right]
-        #     if curr_val==0:
-        #         res.append([nums[i],nums[left],nums[right]])
-        #     if i==right:
+        # right=l-1
+        # ptr=1
+
+        # while right<l :
+        #     sumi=nums[left]+nums[ptr]+nums[right]
+        #     if sumi==0 and left!=right and right!=ptr:
+        #         a=[nums[left],nums[ptr],nums[right]]
+        #         ans.append(a)
+        #         left+=1
         #         right-=1
-        #         i=left+1
-        #     i+=1
-        # print(res)
+                
+        #     elif sumi>0:
+        #         right-=1
+        #     elif sumi<0:
+        #         left+=1
+          
+        # return ans
+
+
+        nums.sort()
+        ans=[]
+        print(nums)
+        
+        for fixed in range(0,len(nums)-2):
+            left=fixed+1
+            right=len(nums)-1
+            
+            if fixed>0 and nums[fixed]==nums[fixed-1]:
+                continue
+            while left<right:
+                sumi=nums[fixed]+nums[left]+nums[right]
+               
+                if sumi<0:
+                    left+=1
+                elif sumi>0:
+                    right-=1
+                else:
+                    ans.append([nums[fixed],nums[left],nums[right]])
+                    left+=1
+                    right-=1
+                    while left<right and nums[left]==nums[left-1]:
+                        left+=1
+                
+            
+        return ans
             
 
+
+
+            
+
+        
+            
 
         
