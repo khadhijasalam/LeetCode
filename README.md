@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0015-3sum](https://github.com/khadhijasalam/LeetCode/tree/master/0015-3sum) |
 | [0031-next-permutation](https://github.com/khadhijasalam/LeetCode/tree/master/0031-next-permutation) |
 | [0053-maximum-subarray](https://github.com/khadhijasalam/LeetCode/tree/master/0053-maximum-subarray) |
+| [0075-sort-colors](https://github.com/khadhijasalam/LeetCode/tree/master/0075-sort-colors) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/khadhijasalam/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0268-missing-number](https://github.com/khadhijasalam/LeetCode/tree/master/0268-missing-number) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/khadhijasalam/LeetCode/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
@@ -22,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0011-container-with-most-water](https://github.com/khadhijasalam/LeetCode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/khadhijasalam/LeetCode/tree/master/0015-3sum) |
 | [0031-next-permutation](https://github.com/khadhijasalam/LeetCode/tree/master/0031-next-permutation) |
+| [0075-sort-colors](https://github.com/khadhijasalam/LeetCode/tree/master/0075-sort-colors) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/khadhijasalam/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0875-longest-mountain-in-array](https://github.com/khadhijasalam/LeetCode/tree/master/0875-longest-mountain-in-array) |
 | [1019-squares-of-a-sorted-array](https://github.com/khadhijasalam/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
@@ -29,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0015-3sum](https://github.com/khadhijasalam/LeetCode/tree/master/0015-3sum) |
+| [0075-sort-colors](https://github.com/khadhijasalam/LeetCode/tree/master/0075-sort-colors) |
 | [0268-missing-number](https://github.com/khadhijasalam/LeetCode/tree/master/0268-missing-number) |
 | [1019-squares-of-a-sorted-array](https://github.com/khadhijasalam/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 ## Divide and Conquer
