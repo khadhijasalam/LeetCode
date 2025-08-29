@@ -60,6 +60,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0009-palindrome-number](https://github.com/khadhijasalam/LeetCode/tree/master/0009-palindrome-number) |
 | [0268-missing-number](https://github.com/khadhijasalam/LeetCode/tree/master/0268-missing-number) |
 ## Bit Manipulation
 |  |
